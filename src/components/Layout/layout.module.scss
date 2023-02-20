@@ -1,0 +1,42 @@
+.window {
+  margin: 20px;
+  border-radius: 15px;
+  background: yellow;
+  overflow: hidden;
+  .top {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 30px;
+    background: rgb(55, 59, 62);
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      content: "";
+      background: rgb(237, 106, 94);
+      height: 15px;
+      width: 15px;
+      border-radius: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10px;
+      color: transparent;
+      cursor: pointer;
+      &:hover {
+        color: black;
+      }
+    }
+    div {
+      border: 0.5px solid white;
+      border-radius: 5px;
+      width: 600px;
+      height: 20px;
+      text-align: center;
+      color: white;
+    }
+  }
+}
