@@ -1,0 +1,16 @@
+.portfolio {
+  .inner {
+    .contents {
+      .portfolio-box {
+        .portfolio-team {
+          display: flex;
+          justify-content: space-between;
+          .portfolio-left {
+          }
+          .portfolio-right {
+          }
+        }
+      }
+    }
+  }
+}
