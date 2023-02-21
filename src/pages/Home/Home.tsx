@@ -1,7 +1,12 @@
-import * as React from "react";
+import React from "react";
+import styles from "./home.module.scss";
 
 const Home = () => {
-  return <section>Home</section>;
+  return (
+    <section>
+      <div>Banjae</div>
+    </section>
+  );
 };
 
 export default Home;

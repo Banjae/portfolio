@@ -1,16 +1,21 @@
 .portfolio {
-  .inner {
-    .contents {
-      .portfolio-box {
-        .portfolio-team {
-          display: flex;
-          justify-content: space-between;
-          .portfolio-left {
-          }
-          .portfolio-right {
-          }
-        }
-      }
+  .teamP {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    a {
+      width: 600px;
+      height: 375px;
+      background: white;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 20px;
+      width: 560px;
+      height: 375px;
+      background: white;
     }
   }
 }

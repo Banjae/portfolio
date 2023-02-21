@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Layout from "../../components/Layout/layout";
 import styles from "./portfolio.module.scss";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
+import "swiper/css";
 
 const Portfolio = () => {
   return (
-    <Layout>
-      <div className="contents">
+    <Layout title="Portfolio">
+      <div>
         {/* 팀프로젝트 */}
-        <div className="porfolio-box">
-          <div className="portfolio-team">
+        <div className={styles.portfolio}>
+          <h3>Team Project</h3>
+          <div className={styles.teamP}>
             <a href="#" target="_blank" rel="noopener noreferrer">
               <img src="" alt="img" />
             </a>
@@ -26,7 +31,49 @@ const Portfolio = () => {
           </div>
         </div>
         {/* 개인 스터디 프로젝트 */}
-        <div className="portfolio-box"></div>
+        <div className="portfolio-box">
+          <h3>Side Project</h3>
+          {/* Swiper 배치 */}
+          <Swiper
+            className="portfolio-slide"
+            loop={true}
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={true}
+            modules={[Pagination]}
+          >
+            <SwiperSlide>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="/images/sample.png" alt="portfolio" />
+              </a>
+            </SwiperSlide>
+            <SwiperSlide>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="/images/sample.png" alt="portfolio" />
+              </a>
+            </SwiperSlide>
+            <SwiperSlide>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="/images/sample.png" alt="portfolio" />
+              </a>
+            </SwiperSlide>
+            <SwiperSlide>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="/images/sample.png" alt="portfolio" />
+              </a>
+            </SwiperSlide>
+            <SwiperSlide>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="/images/sample.png" alt="portfolio" />
+              </a>
+            </SwiperSlide>
+            <SwiperSlide>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="/images/sample.png" alt="portfolio" />
+              </a>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </Layout>
   );

@@ -34,6 +34,7 @@ const Footer = () => {
           )
         )}
       </Dock>
+      <span>Copyright ⓒ Tarolong All Right Reserved.</span>
     </footer>
   );
 };
