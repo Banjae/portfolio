@@ -31,18 +31,18 @@ const Portfolio = () => {
           </div>
         </div>
         {/* 개인 스터디 프로젝트 */}
-        <div className="portfolio-box">
+        <div className={styles.sid}>
           <h3>Side Project</h3>
           {/* Swiper 배치 */}
           <Swiper
-            className="portfolio-slide"
+            className={styles.portfolioSlide}
             loop={true}
             slidesPerView={3}
             spaceBetween={30}
             pagination={true}
             modules={[Pagination]}
           >
-            <SwiperSlide>
+            <SwiperSlide className={styles.slides}>
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <img src="/images/sample.png" alt="portfolio" />
               </a>

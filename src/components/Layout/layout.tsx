@@ -35,7 +35,7 @@ const Layout = ({ children, title }: Props) => {
         <span onClick={goHome}>
           <FontAwesomeIcon icon={faXmark} />
         </span>
-        <div>{title}</div>
+        <div>Banjae/{title}</div>
       </div>
       <div className={styles.content}>{children}</div>
     </div>
