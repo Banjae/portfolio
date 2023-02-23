@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
   .lock {
     display: flex;
     flex-direction: column;
@@ -11,17 +10,31 @@
     img {
       border-radius: 100%;
       background: yellow;
-      width: 150px;
-      height: 150px;
+      width: 200px;
+      height: 200px;
+    }
+    .name {
+      margin: 20px 0;
+      font-size: 30px;
     }
     form {
+      margin-bottom: 5px;
       input {
+        height: 25px;
+        width: 200px;
         border-radius: 15px;
+        border: none;
+        text-align: center;
         background: rgba(255, 255, 255, 0.7);
+        outline-style: none;
       }
       ::placeholder {
-        color: white;
+        color: #bbb;
       }
+    }
+    .error {
+      font-size: 15px;
+      color: red;
     }
   }
 }

@@ -12,7 +12,7 @@ const Portfolio = () => {
       <div>
         {/* 팀프로젝트 */}
         <div className={styles.portfolio}>
-          <h3>Team Project</h3>
+          <span>Team Project</span>
           <div className={styles.teamP}>
             <a href="#" target="_blank" rel="noopener noreferrer">
               <img src="" alt="img" />
@@ -32,7 +32,7 @@ const Portfolio = () => {
         </div>
         {/* 개인 스터디 프로젝트 */}
         <div className={styles.sid}>
-          <h3>Side Project</h3>
+          <span>Side Project</span>
           {/* Swiper 배치 */}
           <Swiper
             className={styles.portfolioSlide}

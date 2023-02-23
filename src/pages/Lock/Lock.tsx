@@ -1,17 +1,50 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./lock.module.scss";
+import { SubmitHandler, useForm } from "react-hook-form";
 
-type Props = {};
+interface IForm {
+  txt: string;
+}
 
-const Lock = (props: Props) => {
+const Lock = () => {
+  const navigate = useNavigate();
+
+  const {
+    register,
+    handleSubmit,
+    getValues,
+    setError,
+    formState: { errors },
+  } = useForm<IForm>();
+
+  const onSubmitHandler: SubmitHandler<IForm> = () => {
+    const value = getValues("txt");
+    value === "DeepDive"
+      ? navigate("/home")
+      : setError("txt", {
+          type: "custom",
+          message: "Please Enter 'DeepDive' Correctly",
+        });
+  };
+
   return (
     <section className={styles.lockScreen}>
       <div className={styles.lock}>
         <img src="" alt="img" />
-        <span>Banjae</span>
-        <form>
-          <input type="text" placeholder="암호입력"></input>
+        <span className={styles.name}>Banjae's portfolio</span>
+        <form onSubmit={handleSubmit(onSubmitHandler)}>
+          <input
+            type="text"
+            {...register("txt", {
+              required: true,
+            })}
+            placeholder="Please Enter 'DeepDive'"
+          />
         </form>
+        {errors.txt && (
+          <span className={styles.error}>{errors.txt.message}</span>
+        )}
       </div>
     </section>
   );

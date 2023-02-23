@@ -13,7 +13,7 @@ import Skills from "./pages/Skills/Skills";
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/banjae">
         <Header />
         <Routes>
           <Route path="/lock" element={<Lock />} />

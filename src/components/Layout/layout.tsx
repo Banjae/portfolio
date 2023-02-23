@@ -12,7 +12,6 @@ type Props = {
 };
 
 const Layout = ({ children, title }: Props) => {
-  console.log(title);
   const window = useRef(null);
   const navigate = useNavigate();
   const goHome = () => {
@@ -35,7 +34,7 @@ const Layout = ({ children, title }: Props) => {
         <span onClick={goHome}>
           <FontAwesomeIcon icon={faXmark} />
         </span>
-        <div>Banjae/{title}</div>
+        <div>Banjae / {title}</div>
       </div>
       <div className={styles.content}>{children}</div>
     </div>

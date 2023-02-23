@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Banjae.github.io/portfolio/lock",
+  "homepage": "https://Banjae.github.io/banjae/lock",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -19,6 +19,7 @@
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.2",
     "react-live-clock": "^6.1.12",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
