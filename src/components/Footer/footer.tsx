@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import { Card } from "../../components/Card/card";
 import { Dock } from "../../components/Dock/dock";
@@ -19,22 +19,26 @@ const GRADIENTS = [
 ];
 
 const Footer = () => {
+  const location = useLocation();
+
+  if (location.pathname === "/lock") return null;
   return (
     <footer>
-      <Dock>
-        {GRADIENTS.map((src, index) =>
-          src ? (
-            <DockCard key={src}>
-              <Link to="/portfolio">
-                <Card src={src} />
-              </Link>
-            </DockCard>
-          ) : (
-            <DockDivider key={index} />
-          )
-        )}
-      </Dock>
-      <span>Copyright ⓒ Tarolong All Right Reserved.</span>
+      <div className={styles.dock}>
+        <Dock>
+          {GRADIENTS.map((src, index) =>
+            src ? (
+              <DockCard key={src}>
+                <Link to="">
+                  <Card src={src} />
+                </Link>
+              </DockCard>
+            ) : (
+              <DockDivider key={index} />
+            )
+          )}
+        </Dock>
+      </div>
     </footer>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import Layout from "../../components/Layout/layout";
 import styles from "./portfolio.module.scss";
+import { motion } from "framer-motion";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";

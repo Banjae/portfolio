@@ -1,0 +1,10 @@
+.dock {
+  justify-content: center;
+  position: fixed;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  .copy {
+    font-size: 12px;
+  }
+}

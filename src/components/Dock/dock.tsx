@@ -49,7 +49,7 @@ export const Dock = ({ children }: DockProps) => {
           setHovered(false);
         }}
         style={{
-          x: "-50%",
+          // x: "-50%",
           scale: zoomLevel
             .to({
               range: [DOCK_ZOOM_LIMIT[0], 1, DOCK_ZOOM_LIMIT[1]],

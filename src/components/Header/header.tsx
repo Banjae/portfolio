@@ -7,10 +7,13 @@ import "moment/locale/ko";
 // FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGhost } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router-dom";
 
 type Props = {};
 
 const Header = (props: Props) => {
+  const location = useLocation();
+  if (location.pathname === "/lock") return null;
   return (
     <header>
       <div className={styles.headLeft}>

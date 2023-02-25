@@ -9,19 +9,23 @@ import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
 import Vision from "./pages/Vision/Vision";
 import Skills from "./pages/Skills/Skills";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   return (
     <>
       <Router basename="/banjae">
         <Header />
-        <Routes>
-          <Route path="/lock" element={<Lock />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/vision" element={<Vision />} />
-          <Route path="/skills" element={<Skills />} />
-        </Routes>
+        <AnimatePresence>
+          <Routes>
+            <Route path="/lock" element={<Lock />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/vision" element={<Vision />} />
+            <Route path="/skills" element={<Skills />} />
+          </Routes>
+        </AnimatePresence>
+        <Footer />
       </Router>
     </>
   );
