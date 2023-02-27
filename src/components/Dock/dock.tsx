@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useCallback, useRef, useState } from "react";
 import { animated, useSpringValue } from "@react-spring/web";
 import { clamp } from "@react-spring/shared";
 
@@ -15,12 +15,12 @@ interface DockProps {
 export const DOCK_ZOOM_LIMIT = [-100, 50];
 
 export const Dock = ({ children }: DockProps) => {
-  const [hovered, setHovered] = React.useState(false);
-  const [width, setWidth] = React.useState(0);
-  const isZooming = React.useRef(false);
-  const dockRef = React.useRef<HTMLDivElement>(null!);
+  const [hovered, setHovered] = useState(false);
+  const [width, setWidth] = useState(0);
+  const isZooming = useRef(false);
+  const dockRef = useRef<HTMLDivElement>(null!);
 
-  const setIsZooming = React.useCallback((value: boolean) => {
+  const setIsZooming = useCallback((value: boolean) => {
     isZooming.current = value;
     setHovered(!value);
   }, []);
@@ -49,7 +49,6 @@ export const Dock = ({ children }: DockProps) => {
           setHovered(false);
         }}
         style={{
-          // x: "-50%",
           scale: zoomLevel
             .to({
               range: [DOCK_ZOOM_LIMIT[0], 1, DOCK_ZOOM_LIMIT[1]],

@@ -1,10 +1,28 @@
-.dock {
+.docks {
   justify-content: center;
   position: fixed;
   bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
-  .copy {
-    font-size: 12px;
+  .dock {
+    position: relative;
+    .tag {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 25px;
+      line-height: 25px;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 15px;
+      color: white;
+      background-color: rgba($color: #000000, $alpha: 0.7);
+      display: none;
+    }
+    .hover {
+      display: block;
+    }
   }
 }

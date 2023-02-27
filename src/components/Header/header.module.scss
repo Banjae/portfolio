@@ -10,6 +10,10 @@ header {
   .headLeft {
     span {
       margin: 0 15px;
+      cursor: pointer;
+    }
+    .name {
+      cursor: pointer;
     }
   }
   .headRight {

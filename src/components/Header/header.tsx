@@ -7,20 +7,30 @@ import "moment/locale/ko";
 // FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGhost } from "@fortawesome/free-solid-svg-icons";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 type Props = {};
 
 const Header = (props: Props) => {
   const location = useLocation();
+  const navigate = useNavigate();
   if (location.pathname === "/lock") return null;
+
+  const naviHome = () => {
+    navigate("/home");
+  };
+
+  const showContact = () => {};
+
   return (
     <header>
       <div className={styles.headLeft}>
-        <span>
+        <span onClick={naviHome}>
           <FontAwesomeIcon icon={faGhost} />
         </span>
-        <span>Banjae</span>
+        <span className={styles.name} onClick={showContact}>
+          Banjae
+        </span>
       </div>
       <div className={styles.headRight}>
         <Clock format="MM월 DD일 (dd) A hh:mm" ticking={true} />

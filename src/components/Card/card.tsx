@@ -3,7 +3,7 @@ import * as React from "react";
 import styles from "./card.module.scss";
 
 interface CardProps {
-  src: string;
+  src: any;
 }
 
 export const Card = ({ src }: CardProps) => (
