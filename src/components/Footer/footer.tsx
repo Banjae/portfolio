@@ -7,34 +7,42 @@ import { DockCard } from "../../components/DockCard/dockCard";
 import { DockDivider } from "../../components/DockDivider/dockDivider";
 import styles from "./footer.module.scss";
 
+// FontAwesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
+import { faPerson } from "@fortawesome/free-solid-svg-icons";
+
 const GRADIENTS = [
   {
-    icon: "https://products.ls.graphics/mesh-gradients/images/03.-Snowy-Mint_1-p-130x130q80.jpeg",
-    link: "/portfolio",
-    content: "Portfolio",
+    icon: `${process.env.PUBLIC_URL}/images/people.png`,
+    link: "/teamp",
+    content: "TeamProject",
   },
   {
-    icon: "https://products.ls.graphics/mesh-gradients/images/04.-Hopbush_1-p-130x130q80.jpeg",
+    icon: `${process.env.PUBLIC_URL}/images/leader.png`,
+    link: "/sidep",
+    content: "SideProject",
+  },
+  {
+    icon: `${process.env.PUBLIC_URL}/images/management.png`,
     link: "/skills",
     content: "Skills",
   },
   {
-    icon: "https://products.ls.graphics/mesh-gradients/images/04.-Hopbush_1-p-130x130q80.jpeg",
+    icon: `${process.env.PUBLIC_URL}/images/aim.png`,
     link: "/vision",
     content: "Vision",
   },
   {
-    icon: "https://products.ls.graphics/mesh-gradients/images/04.-Hopbush_1-p-130x130q80.jpeg",
-    link: "/",
-  },
-  {
-    icon: "https://products.ls.graphics/mesh-gradients/images/04.-Hopbush_1-p-130x130q80.jpeg",
-    link: "/",
+    icon: `${process.env.PUBLIC_URL}/images/timeline.png`,
+    link: "/timeline",
+    content: "Timeline",
   },
   {},
   {
-    icon: "https://products.ls.graphics/mesh-gradients/images/04.-Hopbush_1-p-130x130q80.jpeg",
+    icon: `${process.env.PUBLIC_URL}/images/id-card.png`,
     link: "/",
+    content: "Contact",
   },
 ];
 

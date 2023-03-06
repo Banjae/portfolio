@@ -10,7 +10,11 @@ const Home = () => {
       exit={{ x: -1920, opacity: 0 }}
     >
       <div className={styles.home}>
-        <p>Banjae</p>
+        <p>
+          끊임없이 노력하고 도전하는
+          <br />
+          프론트엔드 개발자 "반재원"입니다.
+        </p>
       </div>
     </motion.section>
   );

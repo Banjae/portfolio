@@ -3,6 +3,7 @@
   border-radius: 15px;
   background: #bbb;
   overflow: hidden;
+  height: calc(1200px - 166px);
   .top {
     position: relative;
     display: flex;
@@ -45,5 +46,6 @@
   .content {
     padding: 20px;
     overflow-y: scroll;
+    height: calc(1200px - 166px - 80px);
   }
 }
