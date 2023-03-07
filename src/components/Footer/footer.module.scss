@@ -1,9 +1,8 @@
 .docks {
   justify-content: center;
-  position: fixed;
-  bottom: 5px;
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
   .dock {
     position: relative;
     .tag {
