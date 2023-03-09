@@ -9,33 +9,35 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
-    children: ReactNode;
-    title: string;
+  children: ReactNode;
+  title: string;
 };
 
 const Layout = ({ children, title }: Props) => {
-    const navigate = useNavigate();
-    const goHome = () => {
-        navigate("/home");
-    };
+  const navigate = useNavigate();
+  const goHome = () => {
+    navigate("/home");
+  };
 
-    return (
-        <motion.section
-            initial={{ y: 600, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -600, opacity: 0 }}
-        >
-            <div className={styles.window}>
-                <div className={styles.top}>
-                    <span onClick={goHome}>
-                        <FontAwesomeIcon icon={faXmark} />
-                    </span>
-                    <div>Banjae / {title}</div>
-                </div>
-                <div className={styles.content}>{children}</div>
-            </div>
-        </motion.section>
-    );
+  return (
+    <motion.section
+      initial={{ y: 600, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{ y: -600, opacity: 0 }}
+    >
+      <div className={styles.window}>
+        <div className={styles.top}>
+          <span className={styles.xBt} onClick={goHome}>
+            <FontAwesomeIcon icon={faXmark} />
+          </span>
+          <span className={styles.yBt}></span>
+          <span className={styles.gBt}></span>
+          <div>Banjae / {title}</div>
+        </div>
+        <div className={styles.content}>{children}</div>
+      </div>
+    </motion.section>
+  );
 };
 
 export default Layout;

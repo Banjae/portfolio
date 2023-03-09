@@ -7,12 +7,12 @@ import { DockCard } from "../../components/DockCard/dockCard";
 import { DockDivider } from "../../components/DockDivider/dockDivider";
 import styles from "./footer.module.scss";
 
-// FontAwesome
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
-import { faPerson } from "@fortawesome/free-solid-svg-icons";
-
 const GRADIENTS = [
+  {
+    icon: `${process.env.PUBLIC_URL}/images/timeline.png`,
+    link: "/about",
+    content: "About",
+  },
   {
     icon: `${process.env.PUBLIC_URL}/images/people.png`,
     link: "/teamp",
@@ -33,15 +33,10 @@ const GRADIENTS = [
     link: "/vision",
     content: "Vision",
   },
-  {
-    icon: `${process.env.PUBLIC_URL}/images/timeline.png`,
-    link: "/timeline",
-    content: "Timeline",
-  },
   {},
   {
     icon: `${process.env.PUBLIC_URL}/images/id-card.png`,
-    link: "/",
+    link: "/contact",
     content: "Contact",
   },
 ];
