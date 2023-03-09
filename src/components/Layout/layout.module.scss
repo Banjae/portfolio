@@ -1,51 +1,50 @@
 .window {
-  margin: 20px;
-  border-radius: 15px;
-  background: #bbb;
-  overflow: hidden;
-  height: calc(100% - 30px - 71px);
-  .top {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    height: 30px;
-    background: rgb(239, 239, 239);
-    span {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      font-size: 12px;
-      content: "";
-      background: rgb(237, 106, 94);
-      height: 15px;
-      width: 15px;
-      border-radius: 100%;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 10px;
-      color: transparent;
-      cursor: pointer;
-      &:hover {
-        color: black;
-      }
+    margin: 20px;
+    border-radius: 15px;
+    background: #bbb;
+    overflow: hidden;
+    height: calc(100% - 30px - 71px);
+    .top {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        height: 30px;
+        background: rgb(239, 239, 239);
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            font-size: 12px;
+            content: "";
+            background: rgb(237, 106, 94);
+            height: 15px;
+            width: 15px;
+            border-radius: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 10px;
+            color: transparent;
+            cursor: pointer;
+            &:hover {
+                color: black;
+            }
+        }
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0.5px solid rgb(191 191 193);
+            border-radius: 5px;
+            width: 600px;
+            height: 25px;
+            color: rgb(79 79 79);
+        }
     }
-    div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 0.5px solid rgb(191 191 193);
-      border-radius: 5px;
-      width: 600px;
-      height: 25px;
-      color: rgb(79 79 79);
+    .content {
+        padding: 20px;
+        height: calc(1200px - 166px - 80px);
     }
-  }
-  .content {
-    padding: 20px;
-    overflow-y: scroll;
-    height: calc(1200px - 166px - 80px);
-  }
 }
