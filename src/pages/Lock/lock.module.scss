@@ -1,40 +1,40 @@
 .lockScreen {
-  height: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .lock {
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    img {
-      border-radius: 100%;
-      background: yellow;
-      width: 200px;
-      height: 200px;
+    .lock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            border-radius: 100%;
+            background: yellow;
+            width: 200px;
+            height: 200px;
+        }
+        .name {
+            margin: 20px 0;
+            font-size: 30px;
+        }
+        form {
+            margin-bottom: 5px;
+            input {
+                height: 25px;
+                width: 200px;
+                border-radius: 15px;
+                border: none;
+                text-align: center;
+                background: rgba(255, 255, 255, 0.7);
+                outline-style: none;
+            }
+            ::placeholder {
+                color: #bbb;
+            }
+        }
+        .error {
+            font-size: 15px;
+            color: red;
+        }
     }
-    .name {
-      margin: 20px 0;
-      font-size: 30px;
-    }
-    form {
-      margin-bottom: 5px;
-      input {
-        height: 25px;
-        width: 200px;
-        border-radius: 15px;
-        border: none;
-        text-align: center;
-        background: rgba(255, 255, 255, 0.7);
-        outline-style: none;
-      }
-      ::placeholder {
-        color: #bbb;
-      }
-    }
-    .error {
-      font-size: 15px;
-      color: red;
-    }
-  }
 }

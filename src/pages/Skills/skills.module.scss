@@ -1,110 +1,98 @@
 .skill {
-  .title {
-    font-size: 35px;
-    font-weight: 600;
-  }
-  span {
-    font-size: 25px;
-  }
-  div {
-    max-height: 1840px;
-  }
-  .skillList {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    li {
-      div {
-        width: 200px;
-        height: 70px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        border-radius: 15px;
-        margin: 0 2px;
-        box-shadow: 0 17px 20px -18px rgba(0, 0, 0, 1);
-      }
-      img {
-        width: 45px;
-        height: 45px;
-      }
-      span {
-        font-family: "AppleSDGothiceNeoH";
+    .title {
+        font-size: 35px;
         font-weight: 600;
-        font-size: 25px;
-      }
-      .html {
-        background-color: #e34f26;
-      }
-      .css {
-        background-color: #1572b6;
-      }
-      .javascript {
-        background-color: #f7df1e;
-      }
-      .typescript {
-        background-color: #3178c6;
-      }
-      .react {
-        background-color: #61dafb;
-      }
-      .nextjs {
-        background-color: #ffffff;
-      }
-      .sass {
-        background-color: #cc6699;
-      }
-      .bootstrap {
-        background-color: #7952b3;
-      }
-      .tailwind {
-        background-color: #06b6d4;
-      }
-      .styledcomponents {
-        background-color: #db7093;
-      }
-      .redux {
-        background-color: #764abc;
-      }
-      .fontawesome {
-        background-color: #528dd7;
-        img {
-          width: 40px;
-          height: 40px;
-        }
-        span {
-          font-size: 20px;
-        }
-      }
-      .npm {
-        background-color: #cb3837;
-      }
-      .yarn {
-        background-color: #2c8ebb;
-      }
-      .github {
-        background-color: #ffffff;
-      }
-      .gitkraken {
-        background-color: #179287;
-      }
-      .sourcetree {
-        background-color: #0052cc;
-      }
-      .mui {
-        background-color: #007fff;
-      }
-      .antdesign {
-        background-color: #0170fe;
-      }
-      .slack {
-        background-color: #4a154b;
-      }
-      .notion {
-        background-color: #ffffff;
-      }
     }
-  }
+    .skillBox {
+        // display: flex;
+        .skillList {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            div {
+                width: 70px;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+            }
+            img {
+                width: 45px;
+                height: 45px;
+            }
+            span {
+                font-family: "AppleSDGothiceNeoH";
+                font-weight: 600;
+                font-size: 16px;
+            }
+            .html5 {
+                background-color: #e34f26;
+            }
+            .css3 {
+                background-color: #1572b6;
+            }
+            .javascript {
+                background-color: #f7df1e;
+            }
+            .typescript {
+                background-color: #3178c6;
+            }
+            .react {
+                background-color: #61dafb;
+            }
+            .nextjs {
+                background-color: #ffffff;
+            }
+            .sass {
+                background-color: #cc6699;
+            }
+            .bootstrap {
+                background-color: #7952b3;
+            }
+            .tailwindcss {
+                background-color: #06b6d4;
+            }
+            .styledcomponents {
+                background-color: #db7093;
+            }
+            .redux {
+                background-color: #764abc;
+            }
+            .fontawesome {
+                background-color: #528dd7;
+            }
+            .npm {
+                background-color: #cb3837;
+            }
+            .yarn {
+                background-color: #2c8ebb;
+            }
+            .github {
+                background-color: #ffffff;
+            }
+            .gitkraken {
+                background-color: #179287;
+            }
+            .sourcetree {
+                background-color: #0052cc;
+            }
+            .mui {
+                background-color: #007fff;
+            }
+            .antdesign {
+                background-color: #0170fe;
+            }
+            .slack {
+                background-color: #4a154b;
+            }
+            .notion {
+                background-color: #ffffff;
+            }
+        }
+    }
 }

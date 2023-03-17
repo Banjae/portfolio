@@ -1,29 +1,41 @@
 .portfolio {
-  span {
-    font-size: 35px;
-    font-weight: 600;
-  }
-  .swiper {
-    height: 880px;
-    .teamP {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 50px;
-      a {
-        width: 640px;
-        height: 400px;
-        background: white;
-      }
-      div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 20px;
-        width: 640px;
-        height: 400px;
-        background: white;
-      }
+    span {
+        font-size: 35px;
+        font-weight: 600;
     }
-  }
+    .swiper {
+        margin-top: 1vw;
+        height: 41.6667vw;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .sideP {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 20px;
+                width: 33.3333vw;
+                height: 20.8333vw;
+                background: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    .swiper {
+        .sideP {
+            gap: 20px !important;
+            div {
+                width: 39.0244vw !important;
+                height: 24.3902vw !important;
+                background: red !important;
+            }
+        }
+    }
 }

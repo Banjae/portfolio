@@ -1,11 +1,14 @@
 body {
-  font-family: "AppleSDGothicNeoM", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  background-image: url(../public/images/back.jpg);
-  /* background-size: cover; */
-  background-repeat: no-repeat;
-  margin: 0;
-  max-height: 1200px;
-  max-width: 1920px;
+    font-family: "AppleSDGothicNeoM", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-image: url(../public/images/backG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 1920px;
+}
+body::-webkit-scrollbar {
+    display: none;
 }

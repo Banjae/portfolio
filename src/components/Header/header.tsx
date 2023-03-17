@@ -12,31 +12,31 @@ import { useLocation, useNavigate } from "react-router-dom";
 type Props = {};
 
 const Header = (props: Props) => {
-  const location = useLocation();
-  const navigate = useNavigate();
-  if (location.pathname === "/lock") return null;
+    const location = useLocation();
+    const navigate = useNavigate();
+    if (location.pathname === "/lock") return null;
 
-  const naviHome = () => {
-    navigate("/home");
-  };
+    const naviHome = () => {
+        navigate("/home");
+    };
 
-  const showContact = () => {};
+    const showContact = () => {};
 
-  return (
-    <header>
-      <div className={styles.headLeft}>
-        <span onClick={naviHome}>
-          <FontAwesomeIcon icon={faGhost} />
-        </span>
-        <span className={styles.name} onClick={showContact}>
-          Banjae
-        </span>
-      </div>
-      <div className={styles.headRight}>
-        <Clock format="MM월 DD일 (dd) A hh:mm" ticking={true} />
-      </div>
-    </header>
-  );
+    return (
+        <header>
+            <div className={styles.headLeft}>
+                <span onClick={naviHome}>
+                    <FontAwesomeIcon icon={faGhost} />
+                </span>
+                <span className={styles.name} onClick={showContact}>
+                    Banjae
+                </span>
+            </div>
+            <div className={styles.headRight}>
+                <Clock format="MM월 DD일 (dd) A hh:mm" ticking={true} />
+            </div>
+        </header>
+    );
 };
 
 export default Header;

@@ -1,24 +1,31 @@
 header {
-  height: 30px;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
-  font-weight: 500;
-  padding: 0 15px;
-  .headLeft {
-    span {
-      margin: 0 15px;
-      cursor: pointer;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    padding: 0 15px;
+    .headLeft {
+        span {
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .name {
+            cursor: pointer;
+        }
     }
-    .name {
-      cursor: pointer;
+    .headRight {
+        span {
+            margin: 0 15px;
+        }
     }
-  }
-  .headRight {
-    span {
-      margin: 0 15px;
+}
+
+@media (max-width: 428px) {
+    header {
+        font-size: 14px;
+        padding: 0 10px;
     }
-  }
 }
