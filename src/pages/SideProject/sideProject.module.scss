@@ -1,22 +1,22 @@
 .portfolio {
-    span {
+    .title {
         font-size: 35px;
         font-weight: 600;
     }
-    .swiper {
-        margin-top: 1vw;
-        height: 41.6667vw;
-        width: 100%;
+    .slide {
+        height: calc(100vh - 217px - 43px);
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         .sideP {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 40px;
+            margin-bottom: 10px;
             .aBox {
                 width: 31.25vw;
-                height: 17.5781vw;
+                height: 19.5313vw;
                 background: #bbb;
                 padding: 5px;
                 position: relative;
@@ -33,7 +33,7 @@
             }
             .aboutBox {
                 width: 31.25vw;
-                height: 17.5781vw;
+                height: 19.5313vw;
                 background: green;
                 padding: 5px;
             }
@@ -42,20 +42,20 @@
 }
 
 @media (max-width: 884px) {
-    .swiper {
+    .slide {
         align-items: center !important;
-        height: 80% !important;
+        flex-wrap: nowrap !important;
         .sideP {
             gap: 20px !important;
             flex-direction: column !important;
             .aBox {
-                width: 39.0244vw !important;
-                height: 24.3902vw !important;
+                width: 56.5611vw !important;
+                height: 31.8156vw !important;
                 background: red !important;
             }
             .aboutBox {
-                width: 39.0244vw !important;
-                height: 24.3902vw !important;
+                width: 56.5611vw !important;
+                height: 31.8156vw !important;
                 background: green;
                 padding: 5px;
             }
@@ -64,16 +64,20 @@
 }
 
 @media (max-width: 428px) {
-    .swiper {
-        display: flex !important;
-        height: 110vw !important;
+    .slide {
         .sideP {
+            gap: 10px !important;
             flex-direction: column !important;
-            gap: 20px !important;
-            div {
-                width: 70.0935vw !important;
-                height: 43.8084vw !important;
-                background: black !important;
+            .aBox {
+                width: 65.4206vw !important;
+                height: 36.7991vw !important;
+                background: red !important;
+            }
+            .aboutBox {
+                width: 65.4206vw !important;
+                height: 36.7991vw !important;
+                background: green;
+                padding: 5px;
             }
         }
     }

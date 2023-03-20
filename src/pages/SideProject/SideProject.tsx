@@ -1,34 +1,34 @@
 import Layout from "../../components/Layout/layout";
 import styles from "./sideProject.module.scss";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, Pagination } from "swiper";
-import "swiper/css";
-import "swiper/css/pagination";
+import SwiperCore, { Mousewheel, Pagination } from "swiper";
+
+// Import Swiper styles
+import "swiper/swiper-bundle.css";
+
+SwiperCore.use([Mousewheel, Pagination]);
 
 const SideProject = () => {
     return (
         <Layout title="SideProject">
             <div className={styles.portfolio}>
                 {/* 개인 프로젝트 */}
-                <span>Side Project</span>
+                <span className={styles.title}>Side Project</span>
                 <Swiper
                     direction="horizontal"
                     slidesPerView={1}
                     spaceBetween={10}
                     mousewheel={true}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    modules={[Mousewheel, Pagination]}
-                    className={styles.swiper}
+                    pagination={{ clickable: true }}
                     breakpoints={{
                         885: {
-                            slidesPerView: 2,
-                            spaceBetween: 40,
                             direction: "vertical",
+                            slidesPerView: 2,
                         },
                     }}
+                    className={styles.slide}
                 >
                     <SwiperSlide className={styles.sideP}>
                         <div className={styles.aBox}>
