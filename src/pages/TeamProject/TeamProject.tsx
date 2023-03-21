@@ -46,7 +46,6 @@ const TeamProject = () => {
                         <div className={styles.aBox}>
                             <video
                                 src={`${process.env.PUBLIC_URL}/videos/GGoBook.mp4`}
-                                autoPlay
                                 muted
                                 controls
                             />
@@ -57,7 +56,6 @@ const TeamProject = () => {
                         <div className={styles.aBox}>
                             <video
                                 src={`${process.env.PUBLIC_URL}/videos/BaedalUniv.mp4`}
-                                autoPlay
                                 muted
                                 controls
                             />
