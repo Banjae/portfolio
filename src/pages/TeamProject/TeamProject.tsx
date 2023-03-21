@@ -1,10 +1,14 @@
 import Layout from "../../components/Layout/layout";
 import styles from "./teamProject.module.scss";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, Pagination } from "swiper";
-import "swiper/css";
-import "swiper/css/pagination";
+import SwiperCore, { Mousewheel, Pagination } from "swiper";
+
+// Import Swiper styles
+import "swiper/swiper-bundle.css";
+
+SwiperCore.use([Mousewheel, Pagination]);
 
 const TeamProject = () => {
     return (
@@ -40,13 +44,23 @@ const TeamProject = () => {
                     </SwiperSlide>
                     <SwiperSlide className={styles.teamP}>
                         <div className={styles.aBox}>
-                            <a
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <img src="" alt="img" />
-                            </a>
+                            <video
+                                src={`${process.env.PUBLIC_URL}/videos/GGoBook.mp4`}
+                                autoPlay
+                                muted
+                                controls
+                            />
+                        </div>
+                        <div className={styles.aboutBox}></div>
+                    </SwiperSlide>
+                    <SwiperSlide className={styles.teamP}>
+                        <div className={styles.aBox}>
+                            <video
+                                src={`${process.env.PUBLIC_URL}/videos/BaedalUniv.mp4`}
+                                autoPlay
+                                muted
+                                controls
+                            />
                         </div>
                         <div className={styles.aboutBox}></div>
                     </SwiperSlide>
@@ -58,26 +72,10 @@ const TeamProject = () => {
                                 rel="noopener noreferrer"
                             >
                                 <img src="" alt="img" />
-                            </a>
-                        </div>
-                        <div className={styles.aboutBox}></div>
-                    </SwiperSlide>
-                    <SwiperSlide className={styles.teamP}>
-                        <div className={styles.aBox}>
-                            <a
-                                href="https://banjae.github.io/hansalim/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <img
-                                    src={`${process.env.PUBLIC_URL}/images/project/hansalim.png`}
-                                    alt="img"
-                                />
                             </a>
                         </div>
                         <div className={styles.aboutBox}>
-                            <span>프로젝트명 : "한살림 장보기" 클론 코딩</span>
-                            사용기술 : HTML CSS
+                            <span></span>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className={styles.teamP}>
@@ -92,8 +90,7 @@ const TeamProject = () => {
                         </div>
                         <div className={styles.aboutBox}>
                             <p>
-                                <span>프로젝트명 : "STX 건설" 클론 코딩</span>
-                                사용기술 : HTML CSS
+                                <span></span>
                             </p>
                         </div>
                     </SwiperSlide>
