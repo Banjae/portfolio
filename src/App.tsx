@@ -13,26 +13,26 @@ import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
 
 function App() {
-  return (
-    <>
-      <Router basename="/banjae">
-        <Header />
-        <AnimatePresence>
-          <Routes>
-            <Route path="/lock" element={<Lock />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/teamp" element={<TeamProject />} />
-            <Route path="/sidep" element={<SideProject />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/vision" element={<Vision />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </AnimatePresence>
-        <Footer />
-      </Router>
-    </>
-  );
+    return (
+        <>
+            <Router>
+                <Header />
+                <AnimatePresence>
+                    <Routes>
+                        <Route path="/portfolio" element={<Lock />} />
+                        <Route path="/home" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/teamp" element={<TeamProject />} />
+                        <Route path="/sidep" element={<SideProject />} />
+                        <Route path="/skills" element={<Skills />} />
+                        <Route path="/vision" element={<Vision />} />
+                        <Route path="/contact" element={<Contact />} />
+                    </Routes>
+                </AnimatePresence>
+                <Footer />
+            </Router>
+        </>
+    );
 }
 
 export default App;

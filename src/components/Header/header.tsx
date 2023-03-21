@@ -14,7 +14,7 @@ type Props = {};
 const Header = (props: Props) => {
     const location = useLocation();
     const navigate = useNavigate();
-    if (location.pathname === "/lock") return null;
+    if (location.pathname === "/portfolio") return null;
 
     const naviHome = () => {
         navigate("/home");
