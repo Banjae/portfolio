@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1445b7b7.css",
-    "main.js": "/portfolio/static/js/main.620c20eb.js",
-    "static/media/backMobile.jpg": "/portfolio/static/media/backMobile.d5365f8f33f02847c780.jpg",
-    "static/media/backPad.jpg": "/portfolio/static/media/backPad.1febf225835dc93bd8d3.jpg",
-    "static/media/backG.jpg": "/portfolio/static/media/backG.3cb0a77d916d04158cf3.jpg",
-    "static/media/AppleSDGothicNeoH.woff": "/portfolio/static/media/AppleSDGothicNeoH.89b5c5573109f56b3e04.woff",
-    "static/media/AppleSDGothicNeoB.woff": "/portfolio/static/media/AppleSDGothicNeoB.54a10830b9ab4a6f6e36.woff",
-    "static/media/AppleSDGothicNeoM.woff": "/portfolio/static/media/AppleSDGothicNeoM.3874ecaca835cc6f2ad7.woff",
-    "static/media/AppleSDGothicNeoL.woff": "/portfolio/static/media/AppleSDGothicNeoL.29572d11395eb4468710.woff",
-    "index.html": "/portfolio/index.html",
-    "main.1445b7b7.css.map": "/portfolio/static/css/main.1445b7b7.css.map",
-    "main.620c20eb.js.map": "/portfolio/static/js/main.620c20eb.js.map"
+    "main.css": "/Banjae/lock/static/css/main.952a1670.css",
+    "main.js": "/Banjae/lock/static/js/main.d53e79fe.js",
+    "static/media/backMobile.jpg": "/Banjae/lock/static/media/backMobile.d5365f8f33f02847c780.jpg",
+    "static/media/backPad.jpg": "/Banjae/lock/static/media/backPad.1febf225835dc93bd8d3.jpg",
+    "static/media/backG.jpg": "/Banjae/lock/static/media/backG.3cb0a77d916d04158cf3.jpg",
+    "static/media/AppleSDGothicNeoH.woff": "/Banjae/lock/static/media/AppleSDGothicNeoH.89b5c5573109f56b3e04.woff",
+    "static/media/AppleSDGothicNeoB.woff": "/Banjae/lock/static/media/AppleSDGothicNeoB.54a10830b9ab4a6f6e36.woff",
+    "static/media/AppleSDGothicNeoM.woff": "/Banjae/lock/static/media/AppleSDGothicNeoM.3874ecaca835cc6f2ad7.woff",
+    "static/media/AppleSDGothicNeoL.woff": "/Banjae/lock/static/media/AppleSDGothicNeoL.29572d11395eb4468710.woff",
+    "index.html": "/Banjae/lock/index.html",
+    "main.952a1670.css.map": "/Banjae/lock/static/css/main.952a1670.css.map",
+    "main.d53e79fe.js.map": "/Banjae/lock/static/js/main.d53e79fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.1445b7b7.css",
-    "static/js/main.620c20eb.js"
+    "static/css/main.952a1670.css",
+    "static/js/main.d53e79fe.js"
   ]
 }
