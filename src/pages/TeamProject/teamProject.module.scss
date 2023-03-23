@@ -68,6 +68,9 @@
 }
 
 @media (max-width: 428px) {
+    .title {
+        font-size: 25px !important;
+    }
     .slide {
         .teamP {
             gap: 10px !important;

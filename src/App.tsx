@@ -11,6 +11,7 @@ import TeamProject from "./pages/TeamProject/TeamProject";
 import SideProject from "./pages/SideProject/SideProject";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
     return (
@@ -19,14 +20,15 @@ function App() {
                 <Header />
                 <AnimatePresence>
                     <Routes>
-                        <Route path="/" element={<Lock />} />
-                        <Route path="/home" element={<Home />} />
+                        <Route path="/lock" element={<Lock />} />
+                        <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/teamp" element={<TeamProject />} />
                         <Route path="/sidep" element={<SideProject />} />
                         <Route path="/skills" element={<Skills />} />
                         <Route path="/vision" element={<Vision />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="*" element={<NotFound />} />
                     </Routes>
                 </AnimatePresence>
                 <Footer />

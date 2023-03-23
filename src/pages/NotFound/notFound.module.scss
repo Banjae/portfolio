@@ -1,0 +1,30 @@
+.NotFound {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    p:first-child {
+        font-size: 50px;
+        margin: 0;
+    }
+    .mainText {
+        font-size: 20px;
+    }
+    p:last-child {
+        font-size: 16px;
+        margin-top: 30px;
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

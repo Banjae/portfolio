@@ -1,4 +1,4 @@
-import React from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import styles from "./header.module.scss";
 
 import Clock from "react-live-clock";
@@ -6,33 +6,36 @@ import "moment/locale/ko";
 
 // FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGhost } from "@fortawesome/free-solid-svg-icons";
-import { useLocation, useNavigate } from "react-router-dom";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 type Props = {};
 
 const Header = (props: Props) => {
     const location = useLocation();
     const navigate = useNavigate();
-    if (location.pathname === "/") return null;
+    if (location.pathname === "/lock" || location.pathname === "*") return null;
 
     const naviHome = () => {
-        navigate("/home");
+        navigate("/");
     };
 
-    const showContact = () => {};
+    const goGithub = () => {
+        window.open("https://github.com/Banjae", "_blank");
+    };
 
     return (
         <header>
             <div className={styles.headLeft}>
-                <span onClick={naviHome}>
-                    <FontAwesomeIcon icon={faGhost} />
-                </span>
-                <span className={styles.name} onClick={showContact}>
-                    Banjae
-                </span>
+                <div onClick={naviHome}>
+                    <FontAwesomeIcon icon={faHouse} />
+                </div>
+                <span>Banjae</span>
             </div>
             <div className={styles.headRight}>
+                <div onClick={goGithub}>
+                    <FontAwesomeIcon icon={faGithub} />
+                </div>
                 <Clock format="MM월 DD일 (dd) A hh:mm" ticking={true} />
             </div>
         </header>

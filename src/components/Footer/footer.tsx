@@ -55,7 +55,9 @@ const Footer = () => {
         document.getElementById(idx.toString())?.classList.remove(styles.hover);
     };
 
-    if (location.pathname === "/") return null;
+    if (location.pathname === "/lock") return null;
+    if (location.pathname === "*") return null;
+
     return (
         <footer>
             <div className={styles.docks}>

@@ -15,7 +15,7 @@ type Props = {
 const Layout = ({ children, title }: Props) => {
     const navigate = useNavigate();
     const goHome = () => {
-        navigate("/home");
+        navigate("/");
     };
 
     return (
