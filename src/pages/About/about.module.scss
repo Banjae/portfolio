@@ -1,0 +1,57 @@
+.about {
+  .title {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .introduce {
+    .introTitle {
+      font-size: 25px;
+      span {
+        margin-left: 10px;
+      }
+    }
+    .introContent {
+      padding: 0 20px;
+      font-size: 18px;
+    }
+  }
+  .porfile {
+    .porfTitle {
+      font-size: 25px;
+      span {
+        margin-left: 10px;
+      }
+    }
+    .porfContent {
+      padding: 0 20px;
+      font-size: 18px;
+    }
+  }
+  .education {
+    .eduTitle {
+      font-size: 25px;
+      span {
+        margin-left: 10px;
+      }
+    }
+    .eduContent {
+      padding: 0 20px;
+      font-size: 18px;
+    }
+  }
+  .resume {
+    .resumeTitle {
+      font-size: 25px;
+      span {
+        margin-left: 10px;
+      }
+    }
+    a {
+      padding: 0 20px;
+      button {
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

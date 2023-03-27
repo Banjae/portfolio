@@ -12,6 +12,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 type Props = {};
 
 const Header = (props: Props) => {
+
     const location = useLocation();
     const navigate = useNavigate();
     if (location.pathname === "/lock" || location.pathname === "*") return null;
@@ -40,6 +41,7 @@ const Header = (props: Props) => {
             </div>
         </header>
     );
+
 };
 
 export default Header;
