@@ -1,57 +1,68 @@
 .about {
-  .title {
-    font-size: 35px;
-    font-weight: 600;
-  }
-  .introduce {
-    .introTitle {
-      font-size: 25px;
-      span {
-        margin-left: 10px;
-      }
+    .title {
+        font-size: 35px;
+        font-weight: 600;
     }
-    .introContent {
-      padding: 0 20px;
-      font-size: 18px;
+    .introduce {
+        .introTitle {
+            font-size: 25px;
+            span {
+                margin-left: 10px;
+            }
+        }
+        .introContent {
+            padding: 0 20px;
+            font-size: 18px;
+        }
     }
-  }
-  .porfile {
-    .porfTitle {
-      font-size: 25px;
-      span {
-        margin-left: 10px;
-      }
+    .porfile {
+        .porfTitle {
+            font-size: 25px;
+            span {
+                margin-left: 10px;
+            }
+        }
+        .porfContent {
+            padding: 0 20px;
+            font-size: 18px;
+            p {
+                .profCate {
+                    width: 50px;
+                }
+            }
+        }
     }
-    .porfContent {
-      padding: 0 20px;
-      font-size: 18px;
+    .education {
+        .eduTitle {
+            font-size: 25px;
+            span {
+                margin-left: 10px;
+            }
+        }
+        .eduContent {
+            display: flex;
+            padding: 0 20px;
+            font-size: 18px;
+            .eduCate {
+                margin-right: 15px;
+            }
+        }
     }
-  }
-  .education {
-    .eduTitle {
-      font-size: 25px;
-      span {
-        margin-left: 10px;
-      }
+    .resume {
+        .resumeTitle {
+            font-size: 25px;
+            span {
+                margin-left: 10px;
+            }
+        }
+        a {
+            padding: 0 20px;
+            button {
+                padding: 3px 5px;
+                border: none;
+                background: #efefef;
+                cursor: pointer;
+            }
+        }
     }
-    .eduContent {
-      padding: 0 20px;
-      font-size: 18px;
-    }
-  }
-  .resume {
-    .resumeTitle {
-      font-size: 25px;
-      span {
-        margin-left: 10px;
-      }
-    }
-    a {
-      padding: 0 20px;
-      button {
-        border: none;
-        cursor: pointer;
-      }
-    }
-  }
 }

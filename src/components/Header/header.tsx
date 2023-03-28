@@ -9,10 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-type Props = {};
-
-const Header = (props: Props) => {
-
+const Header = () => {
     const location = useLocation();
     const navigate = useNavigate();
     if (location.pathname === "/lock" || location.pathname === "*") return null;
@@ -41,7 +38,6 @@ const Header = (props: Props) => {
             </div>
         </header>
     );
-
 };
 
 export default Header;
