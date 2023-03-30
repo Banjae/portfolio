@@ -1,6 +1,10 @@
 import Layout from "../../components/Layout/layout";
 import styles from "./sideProject.module.scss";
 
+// FontAwesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Mousewheel, Pagination } from "swiper";
@@ -41,19 +45,30 @@ const SideProject = () => {
                             </a>
                         </div>
                         <div className={styles.aboutBox}>
-                            <p>
-                                <span>프로젝트명 : "오뭐신?" (개발중)</span>
-                                <span>
-                                    프로젝트 설명 : '카카오맵 API' 와
-                                    'OpenWeatherMap API' 를 활용하여 유저가
-                                    설정한 지역의 날씨 데이터를 얻고, 그 날씨에
-                                    따라 신을 신발을 추천해주는 사이트
+                            <div className={styles.aboutTop}>
+                                <span className={styles.aboutTitle}>
+                                    "오뭐신?" (개발중)
                                 </span>
-                                <span>프로젝트 기간 : 2023.02 ~ ing</span>
-                                <span>
-                                    사용기술: React / Typescript / Firebase
-                                </span>
-                            </p>
+                                <FontAwesomeIcon icon={faGithub} />
+                            </div>
+                            <span className={styles.aboutDate}>
+                                2023.02 ~ ing
+                            </span>
+                            <span className={styles.aboutStack}>
+                                React (with Typescript) / styled-components /
+                                Firebase
+                            </span>
+                            <span>
+                                '카카오맵 API' 와 'OpenWeatherMap API' 를
+                                활용하여 유저가 설정한 지역의 날씨 데이터를
+                                얻고, 그 날씨에 따라 신을 신발을 추천해주는
+                                서비스
+                            </span>
+                            <div className={styles.aboutFunction}>
+                                <span>-</span>
+                                <span>-</span>
+                                <span>-</span>
+                            </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className={styles.sideP}>
@@ -67,12 +82,30 @@ const SideProject = () => {
                             </a>
                         </div>
                         <div className={styles.aboutBox}>
-                            <p>
-                                <span>프로젝트명 : "Banjae's porfolio"</span>
-                                <span>주요기능: </span>
-                                <span>프로젝트 기간: 2023.02 ~ ing</span>
-                                <span>사용기술: React / Typescript </span>
-                            </p>
+                            <div className={styles.aboutTop}>
+                                <span className={styles.aboutTitle}>
+                                    "오뭐신?" (개발중)
+                                </span>
+                                <FontAwesomeIcon icon={faGithub} />
+                            </div>
+                            <span className={styles.aboutDate}>
+                                2023.02 ~ ing
+                            </span>
+                            <span className={styles.aboutStack}>
+                                React (with Typescript) / styled-components /
+                                Firebase
+                            </span>
+                            <span>
+                                '카카오맵 API' 와 'OpenWeatherMap API' 를
+                                활용하여 유저가 설정한 지역의 날씨 데이터를
+                                얻고, 그 날씨에 따라 신을 신발을 추천해주는
+                                서비스
+                            </span>
+                            <div className={styles.aboutFunction}>
+                                <span>-</span>
+                                <span>-</span>
+                                <span>-</span>
+                            </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className={styles.sideP}>
@@ -86,17 +119,30 @@ const SideProject = () => {
                             </a>
                         </div>
                         <div className={styles.aboutBox}>
-                            <p>
-                                <span>
-                                    프로젝트명 : "한살림 장보기" 클론 코딩
+                            <div className={styles.aboutTop}>
+                                <span className={styles.aboutTitle}>
+                                    "오뭐신?" (개발중)
                                 </span>
-                                <span>주요기능: "한살림 장보기" 클론 코딩</span>
-                                <span>담당역할: "한살림 장보기" 클론 코딩</span>
-                                <span>
-                                    프로젝트 기간: "한살림 장보기" 클론 코딩
-                                </span>
-                                <span>사용기술: "한살림 장보기" 클론 코딩</span>
-                            </p>
+                                <FontAwesomeIcon icon={faGithub} />
+                            </div>
+                            <span className={styles.aboutDate}>
+                                2023.02 ~ ing
+                            </span>
+                            <span className={styles.aboutStack}>
+                                React (with Typescript) / styled-components /
+                                Firebase
+                            </span>
+                            <span>
+                                '카카오맵 API' 와 'OpenWeatherMap API' 를
+                                활용하여 유저가 설정한 지역의 날씨 데이터를
+                                얻고, 그 날씨에 따라 신을 신발을 추천해주는
+                                서비스
+                            </span>
+                            <div className={styles.aboutFunction}>
+                                <span>-</span>
+                                <span>-</span>
+                                <span>-</span>
+                            </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className={styles.sideP}>
@@ -106,7 +152,6 @@ const SideProject = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <span>클릭시 사이트로 이동합니다</span>
                                 <img
                                     src={`${process.env.PUBLIC_URL}/images/project/hansalim.png`}
                                     alt="img"
@@ -114,17 +159,22 @@ const SideProject = () => {
                             </a>
                         </div>
                         <div className={styles.aboutBox}>
-                            <p>
-                                <span>
-                                    프로젝트명 : "한살림 장보기" 클론 코딩
+                            <div className={styles.aboutTop}>
+                                <span className={styles.aboutTitle}>
+                                    "한살림 장보기" 클론 코딩
                                 </span>
-                                <span>주요기능: "한살림 장보기" 클론 코딩</span>
-                                <span>담당역할: "한살림 장보기" 클론 코딩</span>
-                                <span>
-                                    프로젝트 기간: "한살림 장보기" 클론 코딩
-                                </span>
-                                <span>사용기술: HTML / CSS / Javascript</span>
-                            </p>
+                                <FontAwesomeIcon icon={faGithub} />
+                            </div>
+                            <span className={styles.aboutDate}>2022.11</span>
+                            <span className={styles.aboutStack}>
+                                HTML / CSS / Javascript
+                            </span>
+                            <span>"한살림 장보기" 클론 코딩</span>
+                            <div className={styles.aboutFunction}>
+                                <span>-</span>
+                                <span>-</span>
+                                <span>-</span>
+                            </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className={styles.sideP}>
@@ -138,15 +188,27 @@ const SideProject = () => {
                             </a>
                         </div>
                         <div className={styles.aboutBox}>
-                            <p>
-                                <span>프로젝트명 : "STX 건설" 클론 코딩</span>
-                                <span>주요기능: "한살림 장보기" 클론 코딩</span>
-                                <span>담당역할: "한살림 장보기" 클론 코딩</span>
-                                <span>
-                                    프로젝트 기간: "한살림 장보기" 클론 코딩
+                            <div className={styles.aboutTop}>
+                                <span className={styles.aboutTitle}>
+                                    "STX건설" 클론 코딩
                                 </span>
-                                <span>사용기술: HTML / CSS </span>
-                            </p>
+                                <FontAwesomeIcon icon={faGithub} />
+                            </div>
+                            <span className={styles.aboutDate}>2022.11</span>
+                            <span className={styles.aboutStack}>
+                                HTML / CSS
+                            </span>
+                            <span>
+                                '카카오맵 API' 와 'OpenWeatherMap API' 를
+                                활용하여 유저가 설정한 지역의 날씨 데이터를
+                                얻고, 그 날씨에 따라 신을 신발을 추천해주는
+                                서비스
+                            </span>
+                            <div className={styles.aboutFunction}>
+                                <span>-</span>
+                                <span>-</span>
+                                <span>-</span>
+                            </div>
                         </div>
                     </SwiperSlide>
                 </Swiper>

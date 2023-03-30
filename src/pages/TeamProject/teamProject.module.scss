@@ -15,9 +15,12 @@
             gap: 40px;
             margin-bottom: 10px;
             .aBox {
-                width: 31.25vw;
-                height: 17.5781vw;
-                background: #efefef;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 600px;
+                height: 375px;
+                // background: #efefef;
                 padding: 5px;
                 position: relative;
                 video {
@@ -36,10 +39,73 @@
                 }
             }
             .aboutBox {
-                width: 31.25vw;
-                height: 17.5781vw;
-                background: green;
+                width: 600px;
+                height: 375px;
+                // background: #efefef;
                 padding: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .aboutTop {
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+                    a:visited {
+                        color: black;
+                    }
+                    .aboutTitle {
+                        font-size: 22px;
+                        color: #ffb13c;
+                        margin-right: 5px;
+                    }
+                }
+                .aboutDate {
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
+                .aboutStack {
+                    color: #007aff;
+                    margin-bottom: 5px;
+                }
+                .aboutFunction {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .portfolio {
+        .slide {
+            .teamP {
+                .aBox {
+                    width: 500px;
+                    height: 312.5px;
+                }
+                .aboutBox {
+                    width: 500px;
+                    height: 312.5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .portfolio {
+        .slide {
+            .teamP {
+                .aBox {
+                    width: 400px;
+                    height: 250px;
+                }
+                .aboutBox {
+                    width: 400px;
+                    height: 250px;
+                }
             }
         }
     }
