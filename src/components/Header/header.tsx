@@ -32,7 +32,10 @@ const Header = () => {
             </div>
             <div className={styles.headRight}>
                 <div onClick={goGithub}>
-                    <FontAwesomeIcon icon={faGithub} />
+                    <img
+                        src={`${process.env.PUBLIC_URL}/images/gitW.png`}
+                        alt="gitHub"
+                    />
                 </div>
                 <Clock format="MM월 DD일 (dd) A hh:mm" ticking={true} />
             </div>

@@ -1,67 +1,85 @@
 .about {
     .title {
-        font-size: 35px;
-        font-weight: 600;
+        font-size: 45px;
+        font-weight: bold;
+        color: #297585;
     }
-    .introduce {
-        .introTitle {
-            font-size: 25px;
-            span {
-                margin-left: 10px;
+    .aboutContent {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .contLeft {
+            .introduce {
+                .introContent {
+                    padding: 20px 10px;
+                    font-size: 30px;
+                    color: #a6a6a6;
+                    span {
+                        color: #297585;
+                        font-weight: bold;
+                    }
+                }
             }
-        }
-        .introContent {
-            padding: 0 20px;
-            font-size: 18px;
-        }
-    }
-    .porfile {
-        .porfTitle {
-            font-size: 25px;
-            span {
-                margin-left: 10px;
+            .education {
+                .eduTitle {
+                    font-size: 35px;
+                    font-weight: bold;
+                    color: #6b6b6b;
+                }
+                .eduContent {
+                    display: flex;
+                    padding: 0 10px;
+                    .eduCate {
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 15px;
+                        font-size: 20px;
+                        color: #a6a6a6;
+                        .edu {
+                            color: #297585;
+                            font-size: 25px;
+                        }
+                    }
+                }
             }
-        }
-        .porfContent {
-            padding: 0 20px;
-            font-size: 18px;
-            p {
-                .profCate {
-                    width: 50px;
+            .resume {
+                display: flex;
+                flex-direction: column;
+                .resumeTitle {
+                    font-size: 35px;
+                    font-weight: bold;
+                    color: #6b6b6b;
+                }
+                a {
+                    button {
+                        margin: 10px 0;
+                        padding: 10px 20px;
+                        background: #297585;
+                        border-radius: 30px;
+                        border: none;
+                        color: white;
+                        font-size: 20px;
+                        cursor: pointer;
+                        span {
+                            margin-right: 5px;
+                        }
+                    }
                 }
             }
         }
-    }
-    .education {
-        .eduTitle {
-            font-size: 25px;
-            span {
-                margin-left: 10px;
-            }
-        }
-        .eduContent {
+        .contRight {
             display: flex;
-            padding: 0 20px;
-            font-size: 18px;
-            .eduCate {
-                margin-right: 15px;
+            flex-direction: column;
+            .name {
+                font-size: 30px;
+                font-weight: bold;
+                color: #6b6b6b;
+                margin-bottom: 10px;
             }
-        }
-    }
-    .resume {
-        .resumeTitle {
-            font-size: 25px;
-            span {
-                margin-left: 10px;
-            }
-        }
-        a {
-            padding: 0 20px;
-            button {
-                padding: 3px 5px;
-                border: none;
-                background: #efefef;
-                cursor: pointer;
+            .info {
+                font-size: 20px;
+                margin-bottom: 10px;
+                color: #a6a6a6;
             }
         }
     }

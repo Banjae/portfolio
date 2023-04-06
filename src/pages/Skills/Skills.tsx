@@ -11,7 +11,6 @@ const Skills = () => {
         { src: "react", title: "React" },
         { src: "nextjs", title: "Next.js" },
         { src: "sass", title: "Sass" },
-        { src: "bootstrap", title: "BootStrap" },
         { src: "tailwindcss", title: "Tailwind" },
         { src: "styledcomponents", title: "styled" },
         { src: "redux", title: "Redux" },

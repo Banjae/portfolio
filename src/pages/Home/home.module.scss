@@ -3,26 +3,64 @@
     align-items: center;
     justify-content: center;
     margin: 20px;
-    height: calc(100vh - 141px);
-    div {
+    height: calc(100vh - 156px);
+    .homeContent {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 100px;
         img {
             height: 300px;
             width: 300px;
-            background-color: antiquewhite;
         }
-        p {
+        .homeRight {
+            position: relative;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100px;
-            font-size: 40px;
-            font-weight: 600;
-            width: 600px;
-            text-align: center;
-            white-space: pre;
+            flex-direction: column;
+            align-items: start;
+            gap: 0;
+            .text {
+                display: flex;
+                flex-direction: column;
+                height: 106px;
+                gap: 0;
+                color: #297585;
+                margin-bottom: 15px;
+                .text1 {
+                    width: 600px;
+                    font-size: 45px;
+                    font-weight: 400;
+                }
+                .text2 {
+                    width: 600px;
+                    font-size: 45px;
+                    font-weight: bold;
+                }
+            }
+            .visible {
+                position: absolute;
+                justify-content: space-between;
+                align-items: center;
+                width: 380px;
+                background: #297585;
+                border-radius: 30px;
+                padding: 10px 20px;
+                animation: show 0.5s linear;
+                &.hidden {
+                    display: none;
+                }
+                &.show {
+                    display: flex;
+                }
+                span {
+                    font-size: 32px;
+                    font-weight: bold;
+                    color: white;
+                }
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
         }
     }
 }
@@ -58,5 +96,16 @@
                 font-size: 25px;
             }
         }
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translatX(0);
     }
 }

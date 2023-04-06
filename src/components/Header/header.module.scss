@@ -10,7 +10,7 @@ header {
     .headLeft {
         display: flex;
         div {
-            margin-right: 15px;
+            margin-right: 20px;
             cursor: pointer;
         }
     }
@@ -18,9 +18,14 @@ header {
         display: flex;
         align-items: center;
         div {
-            font-size: 18px;
-            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
             cursor: pointer;
+            img {
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 }

@@ -9,28 +9,28 @@ import styles from "./footer.module.scss";
 
 const GRADIENTS = [
   {
-    icon: `${process.env.PUBLIC_URL}/images/timeline.png`,
+    icon: `${process.env.PUBLIC_URL}/images/about.png`,
     link: "/about",
     content: "About",
   },
   {
-    icon: `${process.env.PUBLIC_URL}/images/people.png`,
+    icon: `${process.env.PUBLIC_URL}/images/team.png`,
     link: "/teamp",
     content: "TeamProject",
   },
   {
-    icon: `${process.env.PUBLIC_URL}/images/leader.png`,
+    icon: `${process.env.PUBLIC_URL}/images/side.png`,
     link: "/sidep",
     content: "SideProject",
   },
   {
-    icon: `${process.env.PUBLIC_URL}/images/management.png`,
+    icon: `${process.env.PUBLIC_URL}/images/skills.png`,
     link: "/skills",
     content: "Skills",
   },
   {},
   {
-    icon: `${process.env.PUBLIC_URL}/images/id-card.png`,
+    icon: `${process.env.PUBLIC_URL}/images/contact.png`,
     link: "/contact",
     content: "Contact",
   },

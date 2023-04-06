@@ -1,44 +1,74 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./home.module.scss";
-import { motion } from "framer-motion";
 
 const Home = () => {
-    const txt = `끊임없이 노력하고 도전하는 \n프론트엔드 개발자 반재원입니다.`;
-    const [text, setText] = useState<string>("");
+    const firstTxt = "Deep Dive 할 수 있는";
+    const secondTxt = "프론트엔드 개발자 반재원입니다";
+    const [text1, setText1] = useState("");
+    const [text2, setText2] = useState("");
     const [count, setCount] = useState<number>(0);
+    const [resume, setResume] = useState<boolean>(false);
 
     useEffect(() => {
         const typingInterval = setInterval(() => {
-            setText((prevTxt) => {
-                const result = prevTxt ? prevTxt + txt[count] : txt[0];
-                setCount(count + 1);
+            if (count < firstTxt.length) {
+                setText1((prevTxt) => prevTxt + firstTxt[count]);
+            } else if (
+                count >= firstTxt.length &&
+                count < firstTxt.length + secondTxt.length
+            ) {
+                setText2(
+                    (prevTxt) => prevTxt + secondTxt[count - firstTxt.length]
+                );
+            }
 
-                if (count >= txt.length) {
-                    return txt;
-                }
-
-                return result;
-            });
-        }, 300);
+            setCount((prevCount) => prevCount + 1);
+        }, 90);
 
         return () => {
             clearInterval(typingInterval);
         };
-    });
+    }, [count]);
+
+    useEffect(() => {
+        const resumeInterval = setTimeout(() => {
+            setResume(true);
+        }, 3400);
+
+        return () => {
+            clearTimeout(resumeInterval);
+        };
+    }, []);
 
     return (
-        <motion.section
-            initial={{ y: 600, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -600, opacity: 0 }}
-        >
-            <div className={styles.home}>
-                <div>
-                    <img />
-                    <p>{text}</p>
+        <section className={styles.home}>
+            <div className={styles.homeContent}>
+                <img alt="emoji" />
+                <div className={styles.homeRight}>
+                    <div className={styles.text}>
+                        <span className={styles.text1}>{text1}</span>
+                        <span className={styles.text2}>{text2}</span>
+                    </div>
+                    <a
+                        href={`${process.env.PUBLIC_URL}/resume.pdf`}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <div
+                            className={`${styles.visible} ${
+                                resume ? styles.show : styles.hidden
+                            }`}
+                        >
+                            <span>이력서 다운로드</span>
+                            <img
+                                src={`${process.env.PUBLIC_URL}/images/click.png`}
+                                alt="download"
+                            />
+                        </div>
+                    </a>
                 </div>
             </div>
-        </motion.section>
+        </section>
     );
 };
 
