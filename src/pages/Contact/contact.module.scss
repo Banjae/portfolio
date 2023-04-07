@@ -1,22 +1,26 @@
 .contact {
     height: 100%;
     .title {
-        font-size: 35px;
-        font-weight: 600;
+        font-size: 45px;
+        font-weight: bold;
+        color: #297585;
     }
     .contacts {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: calc(100% - 47px);
-        span {
+        height: calc(100% - 53px);
+        .icon {
+            text-align: center;
+            width: 30px;
             font-size: 30px;
-            margin-right: 50px;
+            color: #6b6b6b;
         }
         .kakao {
             display: flex;
             align-items: center;
+            margin-bottom: 10px;
             .kakaoQR {
                 width: 300px;
                 height: 300px;
@@ -27,25 +31,31 @@
             display: flex;
             align-items: center;
             p {
-                font-size: 20px;
-                width: 300px;
+                width: 250px;
+                font-size: 22px;
                 text-align: center;
+                color: #a6a6a6;
             }
         }
         .phone {
             display: flex;
             align-items: center;
             p {
-                font-size: 20px;
-                width: 300px;
+                width: 250px;
+                font-size: 22px;
                 text-align: center;
+                color: #a6a6a6;
             }
+        }
+        .message {
+            font-size: 30px;
+            text-align: center;
         }
     }
 }
 
 @media (max-width: 428px) {
-    .contact{
+    .contact {
         .title {
             font-size: 25px;
         }
@@ -61,12 +71,12 @@
                 }
             }
             .mail {
-                p{
+                p {
                     width: 200px;
                 }
             }
             .phone {
-                p{
+                p {
                     width: 200px;
                 }
             }

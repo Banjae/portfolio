@@ -7,7 +7,6 @@ import "moment/locale/ko";
 // FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
     const location = useLocation();
@@ -28,7 +27,7 @@ const Header = () => {
                 <div onClick={naviHome}>
                     <FontAwesomeIcon icon={faHouse} />
                 </div>
-                <span>Banjae</span>
+                <span>Banjae's portfolio</span>
             </div>
             <div className={styles.headRight}>
                 <div onClick={goGithub}>

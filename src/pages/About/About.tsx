@@ -9,7 +9,7 @@ const About = () => {
     return (
         <Layout title="About">
             <div className={styles.about}>
-                <span className={styles.title}>About</span>
+                <div className={styles.title}>About</div>
                 <div className={styles.aboutContent}>
                     <div className={styles.contLeft}>
                         <div className={styles.introduce}>

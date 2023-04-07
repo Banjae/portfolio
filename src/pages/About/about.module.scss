@@ -1,4 +1,5 @@
 .about {
+    height: 100%;
     .title {
         font-size: 45px;
         font-weight: bold;
@@ -8,6 +9,8 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
+        align-items: center;
+        height: calc(100% - 53px);
         .contLeft {
             .introduce {
                 .introContent {
