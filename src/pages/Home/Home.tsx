@@ -43,7 +43,10 @@ const Home = () => {
     return (
         <section className={styles.home}>
             <div className={styles.homeContent}>
-                <img alt="emoji" />
+                <img
+                    src={`${process.env.PUBLIC_URL}/images/profile.png`}
+                    alt="emoji"
+                />
                 <div className={styles.homeRight}>
                     <div className={styles.text}>
                         <span className={styles.text1}>{text1}</span>

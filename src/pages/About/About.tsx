@@ -67,7 +67,10 @@ const About = () => {
                     <div className={styles.contRight}>
                         <span className={styles.name}>반재원</span>
                         <span className={styles.info}>1996.06.10 | 대구 </span>
-                        <img alt="img" />
+                        <img
+                            src={`${process.env.PUBLIC_URL}/images/profile.png`}
+                            alt="img"
+                        />
                     </div>
                 </div>
             </div>
