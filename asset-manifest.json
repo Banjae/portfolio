@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.683d2c14.css",
-    "main.js": "/portfolio/static/js/main.24384233.js",
+    "main.css": "/portfolio/static/css/main.cd415b88.css",
+    "main.js": "/portfolio/static/js/main.d41c2000.js",
     "static/media/backMobile.jpg": "/portfolio/static/media/backMobile.d5365f8f33f02847c780.jpg",
     "static/media/backPad.jpg": "/portfolio/static/media/backPad.1febf225835dc93bd8d3.jpg",
-    "static/media/backG.jpg": "/portfolio/static/media/backG.3cb0a77d916d04158cf3.jpg",
     "static/media/AppleSDGothicNeoH.woff": "/portfolio/static/media/AppleSDGothicNeoH.89b5c5573109f56b3e04.woff",
     "static/media/AppleSDGothicNeoB.woff": "/portfolio/static/media/AppleSDGothicNeoB.54a10830b9ab4a6f6e36.woff",
     "static/media/AppleSDGothicNeoM.woff": "/portfolio/static/media/AppleSDGothicNeoM.3874ecaca835cc6f2ad7.woff",
     "static/media/AppleSDGothicNeoL.woff": "/portfolio/static/media/AppleSDGothicNeoL.29572d11395eb4468710.woff",
+    "static/media/back.jpg": "/portfolio/static/media/back.7c2799f189cf313fba00.jpg",
     "index.html": "/portfolio/index.html",
-    "main.683d2c14.css.map": "/portfolio/static/css/main.683d2c14.css.map",
-    "main.24384233.js.map": "/portfolio/static/js/main.24384233.js.map"
+    "main.cd415b88.css.map": "/portfolio/static/css/main.cd415b88.css.map",
+    "main.d41c2000.js.map": "/portfolio/static/js/main.d41c2000.js.map"
   },
   "entrypoints": [
-    "static/css/main.683d2c14.css",
-    "static/js/main.24384233.js"
+    "static/css/main.cd415b88.css",
+    "static/js/main.d41c2000.js"
   ]
 }
