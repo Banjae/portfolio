@@ -1,85 +1,94 @@
 .contact {
-    height: 100%;
-    .title {
-        font-size: 45px;
-        font-weight: bold;
-        color: #297585;
+  height: 100%;
+  .title {
+    font-size: 45px;
+    font-weight: bold;
+    color: #297585;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 53px);
+    .icon {
+      text-align: center;
+      width: 30px;
+      font-size: 30px;
+      color: #6b6b6b;
     }
-    .contacts {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: calc(100% - 53px);
-        .icon {
-            text-align: center;
-            width: 30px;
-            font-size: 30px;
-            color: #6b6b6b;
-        }
-        .kakao {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-            .kakaoQR {
-                width: 300px;
-                height: 300px;
-                border-radius: 10px;
-            }
-        }
-        .mail {
-            display: flex;
-            align-items: center;
-            p {
-                width: 250px;
-                font-size: 22px;
-                text-align: center;
-                color: #a6a6a6;
-            }
-        }
-        .phone {
-            display: flex;
-            align-items: center;
-            p {
-                width: 250px;
-                font-size: 22px;
-                text-align: center;
-                color: #a6a6a6;
-            }
-        }
-        .message {
-            font-size: 30px;
-            text-align: center;
-        }
+    .kakao {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      .kakaoQR {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+      }
     }
+    .mail {
+      display: flex;
+      align-items: center;
+      p {
+        width: 250px;
+        font-size: 22px;
+        text-align: center;
+        color: #a6a6a6;
+      }
+    }
+    .phone {
+      display: flex;
+      align-items: center;
+      p {
+        width: 250px;
+        font-size: 22px;
+        text-align: center;
+        color: #a6a6a6;
+      }
+    }
+    .message {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
 }
 
 @media (max-width: 428px) {
-    .contact {
-        .title {
-            font-size: 25px;
-        }
-        .contacts {
-            span {
-                font-size: 20px;
-                margin-right: 30px;
-            }
-            .kakao {
-                .kakaoQR {
-                    width: 200px;
-                    height: 200px;
-                }
-            }
-            .mail {
-                p {
-                    width: 200px;
-                }
-            }
-            .phone {
-                p {
-                    width: 200px;
-                }
-            }
-        }
+  .contact {
+    .title {
+      font-size: 25px;
     }
+    .contacts {
+      height: calc(100% - 30px);
+      span {
+        font-size: 20px;
+        margin-right: 30px;
+      }
+      .icon {
+        font-size: 20px;
+      }
+      .kakao {
+        .kakaoQR {
+          width: 200px;
+          height: 200px;
+        }
+      }
+      .mail {
+        p {
+          font-size: 17px;
+          width: 200px;
+        }
+      }
+      .phone {
+        p {
+          font-size: 17px;
+          width: 200px;
+        }
+      }
+      .message {
+        font-size: 21px;
+      }
+    }
+  }
 }

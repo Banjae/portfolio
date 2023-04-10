@@ -1,45 +1,33 @@
 @font-face {
-    font-family: "Pretendard-Regular";
-    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-        format("woff");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
-    font-family: "Pretendard-Regular", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    background-image: url(../public/images/back.jpg);
-    background-size: cover;
-    background-position: 0% 60%;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    height: 100%;
-    max-width: 1920px;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-image: url(../public/images/back.jpg);
+  background-size: cover;
+  background-position: 0% 60%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  height: 100%;
 }
 
 ul,
 li {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 a {
-    text-decoration: none;
-}
-@media (max-width: 884px) {
-    body {
-        background-image: url(../public/images/backPad.jpg);
-    }
-}
-
-@media (max-width: 428px) {
-    body {
-        background-image: url(../public/images/backMobile.jpg);
-    }
+  text-decoration: none;
 }
