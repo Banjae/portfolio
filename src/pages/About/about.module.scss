@@ -1,117 +1,228 @@
 .about {
-  height: 100%;
-  .title {
-    font-size: 45px;
-    font-weight: bold;
-    color: #297585;
-  }
-  .aboutContent {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 100px;
-    align-items: center;
-    height: calc(100% - 53px);
-    .contLeft {
-      .introduce {
-        .introContent {
-          padding: 20px 10px;
-          font-size: 30px;
-          color: #a6a6a6;
-          span {
-            color: #297585;
-            font-weight: bold;
-            font-size: 32px;
-          }
+    height: 100%;
+    .title {
+        font-size: 45px;
+        font-weight: bold;
+        color: #297585;
+    }
+    .aboutContent {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 100px;
+        align-items: center;
+        height: calc(100% - 53px);
+        .contLeft {
+            .introduce {
+                .introContent {
+                    padding: 20px 0;
+                    font-size: 30px;
+                    color: #a6a6a6;
+                    span {
+                        color: #297585;
+                        font-weight: bold;
+                        font-size: 32px;
+                    }
+                }
+            }
+            .education {
+                .eduTitle {
+                    font-size: 35px;
+                    font-weight: bold;
+                    color: #6b6b6b;
+                }
+                .eduContent {
+                    display: flex;
+                    padding: 0 10px;
+                    .eduCate {
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 15px;
+                        font-size: 20px;
+                        color: #a6a6a6;
+                        .edu {
+                            color: #297585;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+            .resume {
+                display: flex;
+                flex-direction: column;
+                .resumeTitle {
+                    font-size: 35px;
+                    font-weight: bold;
+                    color: #6b6b6b;
+                }
+                a {
+                    button {
+                        margin: 10px 0;
+                        padding: 10px 20px;
+                        background: #297585;
+                        border-radius: 30px;
+                        border: none;
+                        color: white;
+                        font-size: 20px;
+                        cursor: pointer;
+                        span {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
         }
-      }
-      .education {
-        .eduTitle {
-          font-size: 35px;
-          font-weight: bold;
-          color: #6b6b6b;
-        }
-        .eduContent {
-          display: flex;
-          padding: 0 10px;
-          .eduCate {
+        .contRight {
             display: flex;
             flex-direction: column;
-            margin-right: 15px;
-            font-size: 20px;
-            color: #a6a6a6;
-            .edu {
-              color: #297585;
-              font-size: 25px;
+            .name {
+                font-size: 30px;
+                font-weight: bold;
+                color: #6b6b6b;
+                margin-bottom: 10px;
             }
-          }
-        }
-      }
-      .resume {
-        display: flex;
-        flex-direction: column;
-        .resumeTitle {
-          font-size: 35px;
-          font-weight: bold;
-          color: #6b6b6b;
-        }
-        a {
-          button {
-            margin: 10px 0;
-            padding: 10px 20px;
-            background: #297585;
-            border-radius: 30px;
-            border: none;
-            color: white;
-            font-size: 20px;
-            cursor: pointer;
-            span {
-              margin-right: 5px;
+            .info {
+                font-size: 20px;
+                margin-bottom: 10px;
+                color: #a6a6a6;
             }
-          }
+            img {
+                transform: scaleX(-1);
+            }
         }
-      }
     }
-    .contRight {
-      display: flex;
-      flex-direction: column;
-      .name {
-        font-size: 30px;
-        font-weight: bold;
-        color: #6b6b6b;
-        margin-bottom: 10px;
-      }
-      .info {
-        font-size: 20px;
-        margin-bottom: 10px;
-        color: #a6a6a6;
-      }
-      img {
-        transform: scaleX(-1);
-      }
-    }
-  }
 }
 
 @media (max-width: 1655px) {
-  .about {
-    .aboutContent {
-      .contLeft {
-        .introduce {
-          .introContent {
-            font-size: 25px;
-          }
-        }
-        .education {
-          .eduContent {
-            .eduCate {
-              .edu {
-                font-size: 20px;
-              }
+    .about {
+        .aboutContent {
+            .contLeft {
+                .introduce {
+                    .introContent {
+                        font-size: 25px;
+                        span {
+                            font-size: 27px;
+                        }
+                    }
+                }
+                .education {
+                    .eduContent {
+                        .eduCate {
+                            .edu {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
+}
+
+@media (max-width: 884px) {
+    .about {
+        .aboutContent {
+            gap: 50px;
+            .contLeft {
+                .introduce {
+                    .introContent {
+                        font-size: 20px;
+                        span {
+                            font-size: 22px;
+                        }
+                    }
+                }
+                .education {
+                    .eduTitle {
+                        font-size: 22px;
+                    }
+                    .eduContent {
+                        .eduCate {
+                            font-size: 16px;
+                            .edu {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+                .resume {
+                    .resumeTitle {
+                        font-size: 22px;
+                    }
+                    a {
+                        button {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .contRight {
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 428px) {
+    .about {
+        .title {
+            font-size: 25px;
+        }
+        .aboutContent {
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            gap: 0;
+            .contLeft {
+                .introduce {
+                    .introContent {
+                        text-align: center;
+                        font-size: 14px;
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .education {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .eduTitle {
+                        font-size: 20px;
+                    }
+                    .eduContent {
+                        text-align: center;
+                        .eduCate {
+                            font-size: 15px;
+                            .edu {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                .resume {
+                    align-items: center;
+                    margin-bottom: 10px;
+                    .resumeTitle {
+                        font-size: 20px;
+                    }
+                    a {
+                        button {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .contRight {
+                align-items: center;
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
+    }
 }

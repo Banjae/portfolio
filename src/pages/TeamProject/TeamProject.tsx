@@ -228,7 +228,10 @@ const TeamProject = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <img src="" alt="img" />
+                                <img
+                                    src={`${process.env.PUBLIC_URL}/images/project/bing.png`}
+                                    alt="img"
+                                />
                             </a>
                         </div>
                         <div className={styles.aboutBox}>

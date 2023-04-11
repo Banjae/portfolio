@@ -1,192 +1,269 @@
 .skill {
-  height: 100%;
-  .title {
-    font-size: 45px;
-    font-weight: bold;
-    color: #297585;
-  }
-  .skillBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: calc(100% - 53px);
-    .skillList {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 40px 0;
-      .skill {
-        position: relative;
+    height: 100%;
+    .title {
+        font-size: 45px;
+        font-weight: bold;
+        color: #297585;
+    }
+    .skillBox {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        margin: 0 50px;
-        .box {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 30px;
-          width: 150px;
-          height: 150px;
-          background: #dadada;
-        }
-        img {
-          width: 100px;
-          height: 100px;
-        }
-        span {
-          margin-top: 5px;
-          font-weight: bold;
-          color: #6b6b6b;
-          font-size: 25px;
-        }
-        .modalTop {
-          border-radius: 15px;
-          position: absolute;
-          padding: 10px;
-          top: 110%;
-          width: 350px;
-          background: #fff;
-          z-index: 99;
-          border: 3px solid #297585;
-          span {
-            margin-bottom: 10px;
-            color: #297585;
-          }
-          ul {
-            padding-left: 20px;
-            margin: 5px 0;
-            li {
-              list-style: square;
-              margin: 5px 0;
+        justify-content: center;
+        height: calc(100% - 53px);
+        .skillList {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px 0;
+            .skill {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 50px;
+                .box {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 30px;
+                    width: 150px;
+                    height: 150px;
+                    background: #dadada;
+                }
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+                span {
+                    margin-top: 5px;
+                    font-weight: bold;
+                    color: #6b6b6b;
+                    font-size: 25px;
+                }
+                .modalTop {
+                    position: absolute;
+                    border-radius: 15px;
+                    padding: 10px;
+                    top: 110%;
+                    width: 350px;
+                    background: #fff;
+                    z-index: 99;
+                    border: 3px solid #297585;
+                    span {
+                        margin-bottom: 10px;
+                        color: #297585;
+                    }
+                    ul {
+                        padding-left: 20px;
+                        margin: 5px 0;
+                        li {
+                            list-style: square;
+                            margin: 5px 0;
+                        }
+                    }
+                    & :after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 0;
+                        height: 0;
+                        border: 10px solid transparent;
+                        border-bottom-color: #297585;
+                        border-top: 0;
+                        margin-top: -10px;
+                    }
+                }
+                .modalBot {
+                    position: absolute;
+                    padding: 10px;
+                    bottom: 110%;
+                    width: 350px;
+                    background: #fff;
+                    border: 3px solid #297585;
+                    border-radius: 15px;
+                    z-index: 99;
+                    span {
+                        margin-bottom: 10px;
+                        color: #297585;
+                    }
+                    ul {
+                        padding-left: 20px;
+                        margin: 5px 0;
+                        li {
+                            list-style: square;
+                            margin: 5px 0;
+                        }
+                    }
+                    & :after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 0;
+                        height: 0;
+                        border: 10px solid transparent;
+                        border-top-color: #297585;
+                        border-bottom: 0;
+                        margin-bottom: -10px;
+                    }
+                }
             }
-          }
-          & :after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 0;
-            border: 10px solid transparent;
-            border-bottom-color: #297585;
-            border-top: 0;
-            margin-top: -10px;
-          }
         }
-        .modalBot {
-          position: absolute;
-          padding: 10px;
-          bottom: 110%;
-          width: 350px;
-          background: #fff;
-          border: 3px solid #297585;
-          border-radius: 10px;
-          z-index: 99;
-          span {
-            margin-bottom: 10px;
-            color: #297585;
-          }
-          ul {
-            padding-left: 20px;
-            margin: 5px 0;
-            li {
-              list-style: square;
-              margin: 5px 0;
-            }
-          }
-          & :after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 0;
-            border: 10px solid transparent;
-            border-top-color: #297585;
-            border-bottom: 0;
-            margin-bottom: -10px;
-          }
-        }
-      }
     }
-  }
 }
 
 @media (max-width: 1565px) {
-  .skill {
-    .skillBox {
-      .skillList {
-        .skill {
-          .modalTop {
-            width: 250px;
-          }
-          .modalBot {
-            width: 250px;
-          }
+    .skill {
+        .skillBox {
+            .skillList {
+                .skill {
+                    .modalTop {
+                        width: 250px;
+                    }
+                    .modalBot {
+                        width: 250px;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 
 @media (max-width: 1430px) {
-  .skill {
-    .skillBox {
-      .skillList {
-        .skill {
-          margin: 0 30px;
-          .box {
-            width: 120px;
-            height: 120px;
-          }
-          img {
-            width: 80px;
-            height: 80px;
-          }
-          span {
-            font-size: 20px;
-          }
+    .skill {
+        .skillBox {
+            .skillList {
+                .skill {
+                    margin: 0 30px;
+                    .box {
+                        width: 120px;
+                        height: 120px;
+                    }
+                    img {
+                        width: 80px;
+                        height: 80px;
+                    }
+                    span {
+                        font-size: 20px;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 
 @media (max-width: 1150px) {
-  .skill {
-    .skillBox {
-      display: flex;
-      justify-content: start;
-      align-items: start;
-      .skillList {
-        flex-direction: column;
-        .skill {
-          .box {
-            width: 120px;
-            height: 120px;
-          }
-          img {
-            width: 80px;
-            height: 80px;
-          }
-          span {
-            font-size: 20px;
-          }
+    .skill {
+        .skillBox {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            .skillList {
+                .skill {
+                    .box {
+                        width: 120px;
+                        height: 120px;
+                    }
+                    img {
+                        width: 80px;
+                        height: 80px;
+                    }
+                    span {
+                        font-size: 20px;
+                    }
+                }
+            }
         }
-      }
     }
-  }
+}
+
+@media (max-width: 884px) {
+    .skill {
+        .skillBox {
+            padding: 20px;
+            .skillList {
+                flex-direction: column;
+                margin: 0;
+                .skill {
+                    margin: 10px;
+                    .modalTop {
+                        top: 0;
+                        left: 130%;
+                        width: 450px;
+                        & :after {
+                            content: "";
+                            position: absolute;
+                            left: 3px;
+                            top: 25px;
+                            width: 0;
+                            height: 0;
+                            border: 10px solid transparent;
+                            border-right-color: #297585;
+                            border-left: 0;
+                            margin-top: -10px;
+                            margin-left: -10px;
+                        }
+                    }
+                    .modalBot {
+                        bottom: 0;
+                        left: 130%;
+                        width: 450px;
+                        & :after {
+                            content: "";
+                            position: absolute;
+                            left: 3px;
+                            top: 25px;
+                            width: 0;
+                            height: 0;
+                            border: 10px solid transparent;
+                            border-right-color: #297585;
+                            border-left: 0;
+                            margin-top: -10px;
+                            margin-left: -10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 428px) {
-  .skill {
-    .title {
-      font-size: 25px;
+    .skill {
+        .title {
+            font-size: 25px;
+        }
+        .skillBox {
+            padding: 5px 0;
+            .skillList {
+                .skill {
+                    .box {
+                        width: 80px;
+                        height: 80px;
+                    }
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    span {
+                        font-size: 15px;
+                    }
+                    .modalTop {
+                        width: 200px;
+                    }
+                    .modalBot {
+                        width: 200px;
+                        & :after {
+                            top: 150px;
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
 }
